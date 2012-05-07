@@ -1,6 +1,6 @@
 = scribe_api
 
-Description goes here.
+This gem lets you interact with the Scribe SEO v4 API from Copyblogger Media. It uses HTTParty, which is a neato gem.
 
 == Contributing to scribe_api
  

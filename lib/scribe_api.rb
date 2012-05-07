@@ -19,7 +19,7 @@ class ScribeAPI
   end
   
   def content_analysis( params )
-    options = { :body => { :targetedKeyword => params[:keyword], :htmlTitle => params[:title], :htmlDescription => params[:description], :htmlHeadline => params[:headline], :htmlBody => params[:body] } }
+    options = { :body => { :htmlTitle => params[:title], :htmlDescription => params[:description], :htmlHeadline => params[:headline], :htmlBody => params[:body], :targetedKeyword => params[:keyword] } }
     self.class.post( "/analysis/content?apikey=#{@key}", options )
   end
   
