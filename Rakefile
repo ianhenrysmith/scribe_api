@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{scribe api wrapper}
   gem.description = %Q{easily access the scribe api.}
   gem.email = "ianhenrysmith@gmail.com"
-  gem.authors = ["Ian Smith"]
+  gem.authors = ["Ian Henry Smith"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
