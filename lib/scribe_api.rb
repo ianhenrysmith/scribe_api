@@ -29,7 +29,7 @@ class ScribeAPI
   end
   
   def link_building( params )
-    options = { :body => { :query => params[:keyword], :domain => params[:domain] }, :headers => { 'Content-Type' => 'application/json' } }
+    options = { :body => { :query => params[:keyword], :domain => params[:domain] } }
     # this is disabled cause scribe is working on this endpt.
     # self.class.post( "/analysis/link?apikey=#{@key}", options )
   end
