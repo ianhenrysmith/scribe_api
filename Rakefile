@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "scribe_api"
   gem.homepage = "http://github.com/ianisborn/scribe_api"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{scribe api wrapper}
+  gem.description = %Q{easily access the scribe api.}
   gem.email = "ianhenrysmith@gmail.com"
   gem.authors = ["Ian Smith"]
   # dependencies defined in Gemfile
