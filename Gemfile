@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "httparty", ">= 0"
+gem "json", ">= 0"
 
 group :development do
   gem "shoulda", ">= 0"

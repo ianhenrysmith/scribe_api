@@ -7,20 +7,20 @@ class TestScribeApi < Test::Unit::TestCase
       @key = "scribe-2c81aaba77ca4fc4bcf0a94812dd5e32"
     end
     
-    # should "have keyword suggestions" do
-    #   @scribe = ScribeAPI.new( @key )
-    #   params = { :keyword => "horse" }
-    #   suggestions = @scribe.keyword_suggestions( params )
-    #   puts suggestions
-    # end
-    # 
-    # should "have keyword details" do
-    #   @scribe = ScribeAPI.new( @key )
-    #   params = { :keyword => "design", :domain => "http://blog.iso50.com" }
-    #   details = @scribe.keyword_details( params )
-    #   puts details
-    # end
-    # 
+    should "have keyword suggestions" do
+      @scribe = ScribeAPI.new( @key )
+      params = { :keyword => "horse" }
+      suggestions = @scribe.keyword_suggestions( params )
+      puts suggestions
+    end
+    
+    should "have keyword details" do
+      @scribe = ScribeAPI.new( @key )
+      params = { :keyword => "design", :domain => "http://blog.iso50.com" }
+      details = @scribe.keyword_details( params )
+      puts details
+    end
+
     should "have content analysis" do
       @scribe = ScribeAPI.new( @key )
       params = { :title => "Stocks Claw Back" }
@@ -40,10 +40,10 @@ class TestScribeApi < Test::Unit::TestCase
     #   puts link_building
     # end
     
-    # should "have user info" do
-    #   @scribe = ScribeAPI.new( @key )
-    #   info = @scribe.user_information
-    #   puts info
-    # end
+    should "have user info" do
+      @scribe = ScribeAPI.new( @key )
+      info = @scribe.user_information
+      puts info
+    end
   end
 end
