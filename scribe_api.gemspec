@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{scribe_api}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Ian Smith}]
-  s.date = %q{2012-05-08}
+  s.authors = [%q{Ian Henry Smith}]
+  s.date = %q{2012-05-09}
   s.description = %q{easily access the scribe api.}
   s.email = %q{ianhenrysmith@gmail.com}
   s.extra_rdoc_files = [
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/scribe_api.rb",
+    "scribe_api.gemspec",
     "test/fixtures.json",
     "test/helper.rb",
     "test/test_scribe_api.rb"
@@ -40,6 +41,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
+      s.add_runtime_dependency(%q<json>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
@@ -49,6 +51,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<fakeweb>, ["= 1.3.0"])
     else
       s.add_dependency(%q<httparty>, [">= 0"])
+      s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
@@ -59,6 +62,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<httparty>, [">= 0"])
+    s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
