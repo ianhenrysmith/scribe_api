@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{scribe_api}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Ian Henry Smith}]
-  s.date = %q{2012-05-09}
+  s.date = %q{2012-05-10}
   s.description = %q{easily access the scribe api.}
   s.email = %q{ianhenrysmith@gmail.com}
   s.extra_rdoc_files = [
