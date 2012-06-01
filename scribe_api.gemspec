@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{scribe_api}
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Ian Henry Smith}]
-  s.date = %q{2012-05-10}
+  s.date = %q{2012-06-01}
   s.description = %q{easily access the scribe api.}
   s.email = %q{ianhenrysmith@gmail.com}
   s.extra_rdoc_files = [
@@ -26,7 +26,10 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/scribe_api.rb",
     "scribe_api.gemspec",
-    "test/fixtures.json",
+    "test/fixtures/vcr_cassettes/content_analysis.yml",
+    "test/fixtures/vcr_cassettes/kw_details.yml",
+    "test/fixtures/vcr_cassettes/kw_suggestions.yml",
+    "test/fixtures/vcr_cassettes/user_info.yml",
     "test/helper.rb",
     "test/test_scribe_api.rb"
   ]
@@ -47,8 +50,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<ruby-debug19>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
-      s.add_development_dependency(%q<jnunemaker-matchy>, ["= 0.4.0"])
-      s.add_development_dependency(%q<fakeweb>, ["= 1.3.0"])
+      s.add_development_dependency(%q<vcr>, [">= 0"])
+      s.add_development_dependency(%q<webmock>, [">= 0"])
     else
       s.add_dependency(%q<httparty>, [">= 0"])
       s.add_dependency(%q<json>, [">= 0"])
@@ -57,8 +60,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<ruby-debug19>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
-      s.add_dependency(%q<jnunemaker-matchy>, ["= 0.4.0"])
-      s.add_dependency(%q<fakeweb>, ["= 1.3.0"])
+      s.add_dependency(%q<vcr>, [">= 0"])
+      s.add_dependency(%q<webmock>, [">= 0"])
     end
   else
     s.add_dependency(%q<httparty>, [">= 0"])
@@ -68,8 +71,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<ruby-debug19>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
-    s.add_dependency(%q<jnunemaker-matchy>, ["= 0.4.0"])
-    s.add_dependency(%q<fakeweb>, ["= 1.3.0"])
+    s.add_dependency(%q<vcr>, [">= 0"])
+    s.add_dependency(%q<webmock>, [">= 0"])
   end
 end
 
