@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.scribeseo.com/analysis/content?apikey=scribe-2c81aaba77ca4fc4bcf0a94812dd5e32&output=json
+    body:
+      encoding: UTF-8
+      string: ! '{"htmlTitle":"Stocks Claw Back","htmlDescription":"Stocks reversed
+        losses and inched higher, after elections in France and Greece fueled concerns
+        about the region''s ability to deal with its sovereign-debt problems.","htmlHeadline":"Stocks
+        Claw Back","htmlBody":"Stocks reversed losses and inched higher, after elections
+        in France and Greece fueled concerns about the region''s ability to deal with
+        its sovereign-debt problems. Stocks opened lower but recovered most losses
+        by Monday afternoon. The Dow Jones Industrial Average rose 10 points, or 0.1%,
+        to 13048. The Dow industrials fell as much as 68 points early in the session.
+        The Standard & Poor''s 500-stock index rose four points, or 0.3%, to 1373,
+        and the Nasdaq Composite rose 13 points, 0.4%, to 2969. Vincent Cignarella
+        and Michael Casey join Markets Hub with the U.S. reaction to weekend elections
+        in France and Greece, and what the new order will mean for the continent''s
+        debt struggles. Financial-sector stocks rose the most, with Bank of America
+        CVX -0.31% leading Dow components. Utility stocks trailed behind. Walt Disney
+        DIS +1.93% rose after its latest superhero action film, ''The Avengers,''
+        raked in over $200 million in its weekend box-office debut. Strong ticket
+        sales validated Disney''s $4 billion acquisition of Marvel Entertainment and
+        softened the blow of the recently disappointing ''John Carter.'' American
+        International Group AIG -3.37% slumped after the U.S. government agreed to
+        sell $5 billion of the insurer''s stock at $30.50 a share, representing a
+        7.1% discount to Friday''s closing price. Weekend elections across the Atlantic
+        initially jostled markets.","targetedKeyword":"stocks","domain":"http://online.wsj.com"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jun 2012 21:46:32 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Content-Length:
+      - '1702'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"docScore":59,"docScoreE":["BodyLen","Hyper"],"fleschScore":"very
+        difficult","keywords":[{"kwc":4.59,"kwd":3.12,"kwe":[],"kwf":5,"kwl":1,"kwlText":"Primary","kwo":"A","kwod":"Congratulations,
+        this term strikes a good balance between search optimization and copywriting
+        best practices.","kwp":"Very High","kwr":1,"kws":13.35,"text":"stocks"},{"kwc":0.81,"kwd":0.62,"kwe":["KwET","KwEM","KwELF"],"kwf":1,"kwl":4,"kwlText":"Not
+        Emphasized","kwo":"B","kwod":"To improve the ranking for this term, correct
+        the copywriting and\/or document issues found.","kwp":"Very Low","kwr":3,"kws":5.82,"text":"financial
+        sector stocks"},{"kwc":1.02,"kwd":1.25,"kwe":["KwET","KwEMP"],"kwf":2,"kwl":4,"kwlText":"Not
+        Emphasized","kwo":"B","kwod":"To improve the ranking for this term, correct
+        the copywriting and\/or document issues found.","kwp":"Very Low","kwr":2,"kws":6.27,"text":"sovereign
+        debt"},{"kwc":3.18,"kwd":1.25,"kwe":["KwEM"],"kwf":2,"kwl":2,"kwlText":"Important","kwo":"C","kwod":"While
+        your copywriting is strong, consider writing more about this topic on your
+        site and\/or use this term more frequently in your content.","kwp":"Very High","kwr":4,"kws":3.74,"text":"claw"},{"kwc":0.81,"kwd":0.62,"kwe":["KwET","KwEM","KwELF"],"kwf":1,"kwl":4,"kwlText":"Not
+        Emphasized","kwo":"D","kwod":"You will need to do some work for this term,
+        including improving your copywriting and writing more about this topic on
+        your site.","kwp":"Very Low","kwr":5,"kws":3.35,"text":"utility stocks"}],"scribeScore":89,"tags":["stocks","financial
+        sector stocks","sovereign debt","claw","utility stocks","economic history
+        of the united kingdom","stocks open lower","stocks reverse","sector stocks","economics","loss","reverse"]}'
+    http_version: !!null 
+  recorded_at: Fri, 01 Jun 2012 21:46:32 GMT
+recorded_with: VCR 2.2.0

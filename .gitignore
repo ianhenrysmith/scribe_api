@@ -16,6 +16,7 @@ doc
 pkg
 
 .rvmrc
+test/config.json
 
 # Have editor/IDE/OS specific files you need to ignore? Consider using a global gitignore: 
 #

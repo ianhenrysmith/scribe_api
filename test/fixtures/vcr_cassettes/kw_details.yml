@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.scribeseo.com/analysis/kw/detail?apikey=scribe-2c81aaba77ca4fc4bcf0a94812dd5e32&output=json
+    body:
+      encoding: UTF-8
+      string: ! '{"query":"design","domain":"http://blog.iso50.com"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jun 2012 21:48:52 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Content-Length:
+      - '365'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"scoreDifficulty":62,"scoreContent":200,"scoreLinks":0,"scoreDomainAuthority":0,"scorePageAuthority":1,"scoreFacebookLikes":57,"scoreGenderMale":51,"scoreGenderFemale":49,"agePrimaryDescription":"Age
+        35 to 49","agePrimaryValue":35,"ageSecondaryDescription":"Age 25 to 34","ageSecondaryValue":30,"ppc":36.5,"volumeAnnual":2579222,"volumeMonthly":214935.16666666666}'
+    http_version: !!null 
+  recorded_at: Fri, 01 Jun 2012 21:48:52 GMT
+recorded_with: VCR 2.2.0

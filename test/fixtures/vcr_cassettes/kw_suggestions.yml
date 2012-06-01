@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.scribeseo.com/analysis/kw/suggestions?apikey=scribe-2c81aaba77ca4fc4bcf0a94812dd5e32&output=json
+    body:
+      encoding: UTF-8
+      string: ! '{"query":"horse"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jun 2012 21:59:34 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Content-Length:
+      - '562'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"suggestions":[{"term":"horse","competition":66,"popularity":19},{"term":"horses","competition":61,"popularity":10},{"term":"horse
+        supplies","competition":46,"popularity":5},{"term":"equine","competition":56,"popularity":4},{"term":"riding","competition":62,"popularity":4},{"term":"horse
+        tack","competition":48,"popularity":3},{"term":"horse riding footwear","competition":15,"popularity":3},{"term":"horse
+        health","competition":42,"popularity":3},{"term":"horse.com","competition":41,"popularity":3},{"term":"horse
+        blankets","competition":38,"popularity":3}]}'
+    http_version: !!null 
+  recorded_at: Fri, 01 Jun 2012 21:59:34 GMT
+recorded_with: VCR 2.2.0

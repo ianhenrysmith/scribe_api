@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.scribeseo.com/membership/user/detail?apikey=scribe-2c81aaba77ca4fc4bcf0a94812dd5e32&output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Jun 2012 21:48:54 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Content-Length:
+      - '213'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"accountStatus":1,"accountType":"developer","evaluations":[{"remaining":4986,"term":"monthly","total":5000,"type":"ContentAnalysis"},{"remaining":1988,"term":"monthly","total":2000,"type":"KeywordIdeaResearch"}]}'
+    http_version: !!null 
+  recorded_at: Fri, 01 Jun 2012 21:48:54 GMT
+recorded_with: VCR 2.2.0

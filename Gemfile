@@ -9,6 +9,6 @@ group :development do
   gem "bundler", "~> 1.0.0"
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem "jeweler", "~> 1.8.3"
-  gem 'jnunemaker-matchy', '0.4.0', :require => 'matchy'
-  gem 'fakeweb', '1.3.0'
+  gem "vcr"
+  gem "webmock"
 end
